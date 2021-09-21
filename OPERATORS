@@ -1,98 +1,112 @@
-1. (& operator)
+1. Arithmetic Operators(+, -, *, /, %)
 
-#include <stdio.h>
-
-int main()
+void main()
 {
-	int x=27;
+	int a = 10;
+	int b = 20;
+
+	var c = a + b;
+	print("Sum of a and b is $c");
+
+	var d = a - b;
+	print("The difference between a and b is $d");
+
+	var e = a * b;
+	print("The product of a and b is $e");
+
+	var f = b / a;
+	print("The quotient of a and b is $f");
 	
-	printf("Value of x: %d\n",x);
-	printf("Address of x: %X\n",&x);
+	var g = b % a;
+	print("The remainder of a and b is $g");
+}
+
+
+2. Relational Operators(>, <, >=, <=, ==, !=)
+
+void main()
+{
+	int a = 10;
+	int b = 20;
 	
-	return 0;
+	var c = a > b;
+	print("a is greater than b is $c");
+
+	var d = a < b;
+	print("a is smaller than b is $d");
+
+	var e = a >= b;
+	print("a is greater than b is $e");
+
+	var f = a <= b;
+	print("a is smaller than b is $f");
+
+	var g = b == a;
+	print("a and b are equal is $g");
+
+	var h = b != a;
+	print("a and b are not equal is $h");
 }
 
-2. (Arithmetic opeartors)
+3. Bitwise Operators(&, |, ~, <<, >>)
 
-#include <stdio.h>
-int main()
+void main()
 {
-    int a = 9,b = 4, c;
-    
-    c = a+b;
-    printf("a+b = %d \n",c);
-    c = a-b;
-    printf("a-b = %d \n",c);
-    c = a*b;
-    printf("a*b = %d \n",c);
-    c = a/b;
-    printf("a/b = %d \n",c);
-    c = a%b;
-    printf("Remainder when a divided by b = %d \n",c);
-    
-    return 0;
+	int a = 10;
+	int b = 20;
+
+	// Performing Bitwise AND on a and b
+	var c = a & b;
+	print(c);
+
+	// Performing Bitwise OR on a and b
+	var d = a | b;
+	print(d);
+
+	// Performing Bitwise NOT on a
+	var e = ~a;
+	print(e);
+
+	// Performing left shift on a
+	var f = a << b;
+	print(f);
+
+	// Performing right shift on a
+	var g = a >> b;
+	print(g);
 }
 
-3. (++ operator and -- operator)
+4. Logical Operators(&&, ||, !)
 
-#include <stdio.h>
-int main()
+void main()
 {
-    int a = 10, b = 100;
-    float c = 10.5, d = 100.5;
+	int a = 10;
+	int b = 20;
+	
+	bool c = a > 25 && b < 25;
+	print(c);
 
-    printf("++a = %d \n", ++a);
-    printf("--b = %d \n", --b);
-    printf("++c = %f \n", ++c);
-    printf("--d = %f \n", --d);
+	bool d = a > 25 || b < 25;
+	print(d);
 
-    return 0;
+	bool e = !(a > 25);
+	print(e);
 }
 
-4. (= operator)
 
-#include <stdio.h>
-int main()
+5. Assignment Operator(=)
+
+void main()
 {
-    int a = 5, c;
+	int a = 10;
+	int b = 20;
 
-    c = a;
-    printf("c = %d\n", c);
+	var c = a * b;
+	print(c);
 
-    return 0;
 }
 
-5. ( == operator)
 
-#include <stdio.h>
-int main()
-{
-   int m=40,n=20;
-   if (m == n)
-   {
-       printf("m and n are equal");
-   }
-   else
-   {
-       printf("m and n are not equal");
-   }
-}
-
-6. (Relational operators)
-
-#include <stdio.h>
-int main()
-{
-    int a = 5, b = 5;
-    
-    printf("%d > %d is %d \n", a, b, a > b);
-    printf("%d < %d is %d \n", a, b, a < b);
-    printf("%d != %d is %d \n", a, b, a != b);
-    printf("%d >= %d is %d \n", a, b, a >= b);
-    printf("%d <= %d is %d \n", a, b, a <= b);
-
-    return 0;
-}
 
 
 
